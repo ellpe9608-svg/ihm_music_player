@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min musikspelare</title>
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Min musikspelare</h1>
+      <p>Musik från mitt egna bibliotek</p>
+    </header>
+
+    <main>
+      <p id="status">Klienten har startat.</p>
+
+      <section>
+        <h2>Låtar</h2>
+        <div id="track-list"></div>
+      </section>
+
+      <section>
+        <h2>Ladda upp musik</h2>
+        <input id="track-upload" type="file" accept=".mp3,audio/mpeg" />
+        <button id="upload-button" type="button">Ladda upp MP3</button>
+      </section>
+
+      <section>
+        <h2>Nu spelas</h2>
+        <p id="now-playing">Ingen låt vald</p>
+        <audio id="audio-player" controls></audio>
+      </section>
+    </main>
+  </body>
+</html>
